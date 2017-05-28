@@ -51,7 +51,8 @@
 		"no": "No",
 		"reload": "Reload",
 		"on": "On",
-    "about": "About"
+    "about": "About",
+		"by": "by"
 	},
 	"es": {
 		"loading": "Cargando",
@@ -105,6 +106,7 @@
 		"no": "No",
 		"reload": "Recargar",
 		"on": "En",
-    "about": "Sobre mi"
+    "about": "Sobre mi",
+		"by": "por"
 	}
 }
