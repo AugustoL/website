@@ -1,5 +1,0 @@
-node_modules
-src/index.min*
-npm-debug.log
-build
-!example

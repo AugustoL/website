@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Web app to display a steem user content as a blog">
+		<meta name="author" content="Augusto Lemble <me@augustolemble.com>">
+		<link id="dynamic-favicon" rel="shortcut icon" href="assets/handWhite.ico" />
+		<title>AugustoLemble</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato');
+    </style>
+		<link href="styles.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	</head>
+	<body id="app">
+    <div class="container site-wrapper">
+      <div class="cover-container">
+        <header>
+          <div>
+						<nav class="nav">
+							<a class="nav-link" href="https://medium.com/@augustolemble"><span class="fab fa-medium"></span> Blog</a>
+              <a class="nav-link" href="https://github.com/AugustoL"><span class="fab fa-github"></span> Github</a>
+							<a class="nav-link" href="https://ar.linkedin.com/in/augustolemble"><span class="fab fa-linkedin"></span> Linkedin</a>
+							<a class="nav-link" href="https://twitter.com/LembleAugusto"><span class="fab fa-twitter"></span> Twitter</a>
+							<a class="nav-link" href="https://www.instagram.com/augustolemble/"><span class="fab fa-instagram"></span> Instagram</a>
+            </nav>
+          </div>
+        </header>
+        <main role="main" class="main text-center">
+					<h2><span class="fa fa-laptop"></span> Full Stack Developer <span class="fa fa-laptop"></span></h2>
+					<h2><span class="fab fa-btc"></span> Blockchain Evangelist <span class="fab fa-btc"></span></h2>
+					<h2><span class="fa fa-rocket"></span> Entrepreneur <span class="fa fa-rocket"></span></h2>
+					<h2><span class="fa fa-globe"></span> Traveler <span class="fa fa-globe"></span></h2>
+					<h2><span class="fa fa-music"></span> Rock <span class="fa fa-music"></span></h2>
+					<h2><span class="fab fa-osi"></span> OpenSource <span class="fab fa-osi"></span></h2>
+        </main>
+        <footer>
+          <div>
+						<p>Email: <a>me@augustolemble.com</a></p>
+						<p>Bitcoin: <small>3DSwbZg5EByikyYj1q8ZYzCvnGByWzwdyZ</small></p>
+						<p>Ether: <small>0x6AF6E2BE59D0310B385141FA7fC282D591C96f09</small></p>
+            <p class="rsa">RSA: <small> AAAAB3NzaC1yc2EAAAADAQABAAACAQDLaGbycompwIn+PNJxnoPWGLcWW+zADRGVWFrybaKXxUX+LozOy4VemWU1ov8P31VaF/UG1Dt6fA/f++YviLVwJ+SYRJdPWEXSdP4YRm3QAdYpm014HZxjuq2d669KWdur5AYrkHVOU8n1xRINnIqLwzh4EZD39s/RQqyeY+GCHJ/Sw3K+VqkOS2eTQXitrmzp0Crto1a6RrtXkWCszB3dMjHjbcApKhzYziXF29J1XeK5we9hk4X93Dw49etk8aALrvjCeNCNtPoxOK6h3GqOfttYyClQCvQlWzEFjDUcDhYiLYb7tDMpxIVvrH1csckoD4w7xjJUyBKtXAuuBWeHwXtt5oarIKVP9QCWdM0n0OAx8AKigP5hobE++k79L1z3o/n/VMNcYl7wWc6LLvhozwosjJuBSRoLyzw4edddK7h3noAXIlktjjiqn4gKZ9wI5XgAEcP/oSJFx9SqOMcOn3yeevNRgkLSWbkYraO82Z54EBlDJ/TSYKo/oHOqAC6TtV0OoHoPG5jJYBAw6uX4d24edEhZrWwaftunu3gJgi8Z1QWp1aN+mMI5uxr0ByyTNfTvw8hJpEIeDqHYaZLODOYGJpM2FPQiIs/Nozly9iH1awijVQZd5ZmX9Ly9wT8IPJ18sy+2uHkc7FEPs4/p79GxryM+U/+d+bo28sf1JQ==<small> <a href="#">me@augustolemble.com</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+	</body>
+	<script type="text/javascript">
+
+    // Change tab icon every click on the body
+    document.head = document.head || document.getElementsByTagName('head')[0];
+		document.getElementById('app').addEventListener("click", function(){
+			var links = document.getElementsByTagName('link');
+			var oldLink;
+			for (var i = 0; i < links.length; i++)
+				if (links[i].id == 'dynamic-favicon'){
+					oldLink = links[i];
+					break;
+				}
+			var link = document.createElement('link');
+			link.id= 'dynamic-favicon';
+			link.rel= 'shortcut icon';
+      if (oldLink.href.toString().indexOf("assets/handWhite.ico") > 0)
+				link.href = "assets/handRed.ico";
+      else
+        link.href = "assets/handWhite.ico";
+			document.head.removeChild(oldLink);
+			document.head.appendChild(link);
+		});
+
+    </script>
+</html>
