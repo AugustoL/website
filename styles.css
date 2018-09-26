@@ -45,14 +45,27 @@ body {
   margin-left: auto;
 }
 .main {
-	padding: 20px 20px 0px 20px;
+	padding: 10px 0px;
 	color: #000;
+}
+
+.image-cropper {
+  max-width: 100px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+	margin: auto;
 	margin-bottom: 10px;
 }
-.main h2 {
-	margin-bottom: 20px;
-}
-.rsa {
-	font-size: 8px;
-	word-wrap: break-word;
+
+.image-cropper img{
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
