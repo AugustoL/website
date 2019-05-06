@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: augustol.com 
+Token: da65cd56c1f5609676de42cdf6903aad2106e1ce9245a6cf2e4c231c3c39219d
