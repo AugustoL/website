@@ -58,6 +58,31 @@ body {
 	margin-bottom: 10px;
 }
 
+.links-section {
+  margin-top: 12px;
+}
+
+.links-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pill-link {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.pill-link:hover {
+  background-color: #001029;
+  color: #fff;
+  text-decoration: none;
+}
+
 .image-cropper img{
   display: block;
   margin: 0 auto;
