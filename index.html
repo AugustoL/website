@@ -4,78 +4,136 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="Augusto Lemble <me@augustolemble.com>">
+		<meta name="description" content="Augusto Lemble — Ethereum developer, open source, Mar del Plata, Argentina.">
+		<meta name="author" content="Augusto Lemble <augustolemble@pm.me>">
 		<link id="dynamic-favicon" rel="shortcut icon" href="assets/handWhite.ico" />
 		<title>AugustoL</title>
-    <style>
-    @import url('vendor/lato.css');
-    </style>
+		<style>
+		@import url('vendor/lato.css');
+		</style>
 		<link href="styles.css" rel="stylesheet">
 		<link href="vendor/bootstrap.min.css" rel="stylesheet">
 		<script defer src="vendor/fontawesome.min.js"></script>
 	</head>
 	<body id="app">
-    <div class="container site-wrapper">
-      <div class="cover-container">
-        <header>
-          <div>
-			<nav class="row">
-				<div class="col text-center">
-					<a class="nav-link" href="https://github.com/AugustoL"><span class="fab fa-2x fa-github"></span></a>
-				</div>
-				<div class="col text-center">
-					<a class="nav-link" href="https://www.instagram.com/augustolemble/"><span class="fab fa-2x fa-instagram"></span></a>
-				</div>
-            </nav>
-          </div>
-        </header>
-        <main role="main" class="main text-center">
-			<div class="image-cropper">
-				<img src="assets/trex.jpg">
+		<div class="container site-wrapper">
+			<div class="cover-container">
+
+				<header>
+					<nav class="row">
+						<div class="col text-center">
+							<a class="nav-link" href="https://github.com/AugustoL"><span class="fab fa-2x fa-github"></span></a>
+						</div>
+						<div class="col text-center">
+							<a class="nav-link" href="https://www.instagram.com/augustolemble/"><span class="fab fa-2x fa-instagram"></span></a>
+						</div>
+					</nav>
+				</header>
+
+				<main role="main" class="main text-center">
+
+					<div class="image-cropper">
+						<img src="assets/trex.jpg" alt="Augusto Lemble">
+					</div>
+
+					<div class="d-block d-sm-none">
+						<h4>augustolemble@pm.me</h4>
+						<p class="pgp">52BB 857D 19FB 4C9F 5D5D 4F63 B077 3D9E 2743 EB6D</p>
+					</div>
+					<div class="d-none d-sm-block">
+						<h2>augustolemble@pm.me</h2>
+						<h4 class="pgp">52BB 857D 19FB 4C9F 5D5D 4F63 B077 3D9E 2743 EB6D</h4>
+					</div>
+
+					<div class="ens-pill">
+						<span class="ens-dot"></span>
+						<span class="ens-name">augustol.eth</span>
+						<span class="ens-sep">·</span>
+						<span class="ens-addr">0x08EE...852c</span>
+					</div>
+
+				</main>
+
+				<section class="block">
+					<div class="block-label">About</div>
+					<p>Building on Ethereum since 2015 — co-founded DXdao and Winding Tree, currently building OpenScan. I like trustless systems, open source, and code that doesn't lie about what it does.</p>
+					<p>Based in Mar del Plata, Argentina. When I'm not at a terminal I surf, rock climb, and cook asados.</p>
+				</section>
+
+				<section class="block">
+					<div class="block-label">Selected work</div>
+					<div class="projects">
+
+						<a class="project" href="https://github.com/openscan-explorer/explorer">
+							<div class="project-tag">Infrastructure</div>
+							<h3 class="project-title">OpenScan</h3>
+							<div class="project-role">Founder · 2024 —</div>
+							<p class="project-blurb">A trustless, open-source blockchain explorer for Bitcoin, Ethereum and L2s. Modular on-chain analysis — reusable utils, algorithms, CLI, and AI adapters.</p>
+							<div class="project-stack">
+								<span>Full-Stack JS</span><span class="sep">/</span><span>Product Owner</span><span class="sep">/</span><span>EVM</span>
+							</div>
+						</a>
+
+						<a class="project" href="https://github.com/AugustoL/erc20-flash-lender">
+							<div class="project-tag">Smart contracts</div>
+							<h3 class="project-title">ERC20 Flash Lender</h3>
+							<div class="project-role">Author · 2024</div>
+							<p class="project-blurb">A flash-loan platform for arbitrary ERC20 tokens. Single-tx atomic borrows, fee routing, and a small set of auditable contracts.</p>
+							<div class="project-stack">
+								<span>Full-Stack JS</span><span class="sep">/</span><span>Solidity</span><span class="sep">/</span><span>Hardhat</span>
+							</div>
+						</a>
+
+					</div>
+				</section>
+
+				<section class="block">
+					<div class="block-label">CV &amp; Keys</div>
+					<div class="cvs">
+
+						<a class="cv" href="assets/AugustoLembleCV-short.pdf">
+							<svg class="cv-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v13m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+							<div class="cv-body">
+								<div class="cv-title">CV Short</div>
+								<div class="cv-desc">One-page summary. Best for recruiters and quick intros.</div>
+							</div>
+						</a>
+
+						<a class="cv" href="assets/AugustoLembleCV-long.pdf">
+							<svg class="cv-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v13m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+							<div class="cv-body">
+								<div class="cv-title">CV Full</div>
+								<div class="cv-desc">Full history of projects, roles, and open-source work.</div>
+							</div>
+						</a>
+
+						<a class="cv" href="assets/AugustoLembleCV-typst.pdf">
+							<svg class="cv-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v13m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+							<div class="cv-body">
+								<div class="cv-title">CV Typst</div>
+								<div class="cv-desc">Typeset with Typst — same content, typographic version.</div>
+							</div>
+						</a>
+
+						<a class="cv" href="assets/augustolemble@pm.me.asc">
+							<svg class="cv-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v13m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+							<div class="cv-body">
+								<div class="cv-title">PGP Key</div>
+								<div class="cv-desc">Public key for encrypted email.</div>
+							</div>
+						</a>
+
+					</div>
+				</section>
+
+				<footer class="site-footer">
+					<span>Mar del Plata, Argentina</span>
+					<span>Click anywhere → change favicon</span>
+				</footer>
+
 			</div>
-			<div class="d-block d-sm-none">
-				<h4>augustolemble@pm.me</h4>
-				<p>52BB 857D 19FB 4C9F 5D5D 4F63 B077 3D9E 2743 EB6D</p>
-			</div>
-			<div class="d-none d-sm-block">
-				<h2>augustolemble@pm.me</h2>
-				<h4>52BB 857D 19FB 4C9F 5D5D 4F63 B077 3D9E 2743 EB6D</h4>
-			</div>
-			<div class="links-section">
-				<div class="links-row">
-					<a class="pill-link" href="assets/augustolemble@pm.me.asc">PGP Key</a>
-					<a class="pill-link" href="assets/AugustoLembleCV-short.pdf">CV Short</a>
-					<a class="pill-link" href="assets/AugustoLembleCV-long.pdf">CV Full</a>
-					<a class="pill-link" href="assets/AugustoLembleCV-typst.pdf">CV Typst</a>
-				</div>
-			</div>
-		</main>
-      </div>
-    </div>
+		</div>
+
+		<script src="script.js"></script>
 	</body>
-	<script type="text/javascript">
-
-    // Change tab icon every click on the body
-    document.head = document.head || document.getElementsByTagName('head')[0];
-		document.getElementById('app').addEventListener("click", function(){
-			var links = document.getElementsByTagName('link');
-			var oldLink;
-			for (var i = 0; i < links.length; i++)
-				if (links[i].id == 'dynamic-favicon'){
-					oldLink = links[i];
-					break;
-				}
-			var link = document.createElement('link');
-			link.id= 'dynamic-favicon';
-			link.rel= 'shortcut icon';
-      if (oldLink.href.toString().indexOf("assets/handWhite.ico") > 0)
-				link.href = "assets/handRed.ico";
-      else
-        link.href = "assets/handWhite.ico";
-			document.head.removeChild(oldLink);
-			document.head.appendChild(link);
-		});
-
-    </script>
 </html>
